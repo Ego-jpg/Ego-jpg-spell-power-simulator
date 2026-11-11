@@ -10,7 +10,6 @@ import net.minecraft.network.chat.Component;
 import java.util.Locale;
 
 public final class SimulatorScreen extends Screen {
-    private final Screen previous;
     private final ScrollSelection selection;
     private SpellCalculator calculator;
     private String generalText;
@@ -19,9 +18,8 @@ public final class SimulatorScreen extends Screen {
     private EditBox school;
     private int left, top, panelWidth, panelHeight;
 
-    public SimulatorScreen(Screen previous, ScrollSelection selection) {
+    public SimulatorScreen(ScrollSelection selection) {
         super(text("title"));
-        this.previous = previous;
         this.selection = selection;
     }
 
@@ -118,5 +116,5 @@ public final class SimulatorScreen extends Screen {
         return Component.translatable("screen.spell_power_simulator." + key, args);
     }
     @Override public boolean isPauseScreen() { return false; }
-    @Override public void onClose() { minecraft.setScreen(minecraft.player == null ? null : previous); }
+    @Override public void onClose() { SimulatorNavigation.close(minecraft); }
 }

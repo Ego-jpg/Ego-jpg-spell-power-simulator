@@ -23,7 +23,7 @@ O nível é o do pergaminho. `SpellOnCastEvent` pode alterar o nível no servido
 
 Comando: `./gradlew test build`, Java Temurin 21.0.13, Gradle 8.14.3.
 
-Resultado: **BUILD SUCCESSFUL; 16 testes executados, 0 falhas, 0 erros, 0 ignorados**.
+Resultado: **BUILD SUCCESSFUL; 17 testes executados, 0 falhas, 0 erros, 0 ignorados**.
 
 | Grupo | Testes | Evidência |
 |---|---:|---|
@@ -31,7 +31,10 @@ Resultado: **BUILD SUCCESSFUL; 16 testes executados, 0 falhas, 0 erros, 0 ignora
 | JeiSelectionTest | 2 | Consulta das APIs externas de lista/favoritos/receitas, cursor vazio, descarte do runtime indisponível |
 | CalculationTest | 5 | Fixtures independentes de nível/potências/configuração, diferenças e zero/overflow/entradas inválidas |
 | PowerInputParserTest | 2 | Edição parcial, valores inválidos e números finitos não negativos |
+| SimulatorNavigationTest | 1 | Camadas reais do NeoForge preservam resultado de crafting, campos editados após resize e retorno à tela anterior |
 | SpellCalculatorTest | 3 | Recusa de magia/classe/nível não auditados, comparação com Iron's, atributos preservados, configuração sincronizada e modificadores efetivos em todos os níveis 1–10 |
+
+O teste de navegação falhou ao reproduzir a limpeza do resultado de crafting e passou após substituir `setScreen` por `pushGuiLayer`/`popGuiLayer`. A tela e seus campos são exercitados sem renderização nativa, com a fronteira de janela/narração substituída; isso não valida aparência nem interação com JEI real.
 
 Os testes de integração carregam registros e datapacks por NeoForge. Uma entidade isolada usa o mapa real de atributos; apenas a fronteira do mundo é substituída por um mock, pois o servidor efêmero do framework não disponibiliza um mundo jogável. As APIs externas do JEI são substituídas por doubles de teste. A seleção em uma interface JEI real ainda precisa de verificação interativa.
 

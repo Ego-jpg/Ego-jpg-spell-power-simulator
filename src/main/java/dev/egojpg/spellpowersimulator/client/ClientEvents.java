@@ -35,7 +35,7 @@ public final class ClientEvents {
                 || previous.getFocused() instanceof EditBox || SimulatorJeiPlugin.hasSearchFocus()) return false;
         var selection = SimulatorJeiPlugin.hoveredStack().flatMap(ScrollReader::read);
         if (selection.isEmpty()) return false;
-        minecraft.setScreen(new SimulatorScreen(previous, selection.get()));
+        SimulatorNavigation.open(minecraft, new SimulatorScreen(selection.get()));
         return true;
     }
 }
