@@ -13,18 +13,11 @@ repositories {
     maven { url = 'https://maven.theillusivec4.top' }
     maven { url = 'https://maven.kosmx.dev' }
     maven { url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
-    maven { url = 'https://code.redspace.io/releases' }
-    maven { url = 'https://code.redspace.io/snapshots' }
     exclusiveContent {
         forRepository {
-            ivy {
-                name = 'IronSpellbooksModrinthRelease'
-                url = 'https://cdn.modrinth.com/data/s4OWxYQQ/versions/slKLosTb/'
-                patternLayout { artifact '[artifact]-[revision].[ext]' }
-                metadataSources { artifact() }
-            }
+            maven { url = 'https://code.redspace.io/releases' }
         }
-        filter { includeGroup 'modrinth' }
+        filter { includeGroup 'io.redspace' }
     }
 }
 neoForge {
@@ -34,7 +27,7 @@ neoForge {
     unitTest { enable(); testedMod = mods.spell_power_simulator }
 }
 dependencies {
-    implementation 'modrinth:irons_spellbooks:1.21.1-3.16.3'
+    implementation 'io.redspace:irons_spellbooks:1.21.1-3.16.3'
     implementation 'mezz.jei:jei-1.21.1-neoforge:19.21.0.247'
     implementation 'software.bernie.geckolib:geckolib-neoforge-1.21.1:4.7.5.1'
     implementation 'top.theillusivec4.curios:curios-neoforge:9.5.1+1.21.1'

@@ -4,6 +4,7 @@
 
 - Iron's: tag [v1.21.1-3.16.3](https://github.com/iron431/irons-spells-n-spellbooks/tree/v1.21.1-3.16.3), commit `532c98dfa5b219f3927aca9b23d9042c00e767bb`.
 - JAR oficial de Iron's: `irons_spellbooks-1.21.1-3.16.3.jar`, versão Modrinth `slKLosTb`. SHA-512 conferido com os metadados oficiais: `fd782f98c6c59b193c4832f33775291d2a7e639e1e23dd47510bfb494d99d182bec1253566b9394f96c733a0d0108be34bd729614b82dc29e55e096fdeb96f5b`.
+- Origem usada pelo build: Maven oficial do autor, `io.redspace:irons_spellbooks:1.21.1-3.16.3`. SHA-512 conferido com o arquivo publicado no mesmo Maven: `4adda15bc174c80e856186f41ca0f353e80277b2817a06ee514f0f400e084103d5297b9fa462cbe66f29d7d4dbe19c2e0bc9b96ac604fe0ff5f010828165c379`. Comparação integral das entradas dos dois JARs confirmou classes e recursos idênticos; somente `META-INF/MANIFEST.MF` difere. A origem foi alterada após o CDN Modrinth falhar com HTTP 500 no GitHub Actions.
 - JAR JEI `jei-1.21.1-neoforge-19.21.0.247.jar` e fontes da API dessa versão, obtidos do Maven oficial de JEI.
 - NeoForge `21.1.250`: POM, JAR universal e fontes/classes do ambiente de desenvolvimento.
 - APIs/bytecode examinados com `javap`: `IJeiRuntime`, overlays de ingredientes/favoritos, `IRecipesGui`, `ISpellContainer`, `SpellData`, `SchoolType`, `SpellConfigManager`, `AbstractSpell` e `FireboltSpell`.
