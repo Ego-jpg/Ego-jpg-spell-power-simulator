@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="spell_power_simulator"
+version="0.1.0"
+displayName="Spell Power Simulator"
+authors="Ego-jpg"
+description='''Client-side, audited spell power comparisons from JEI scrolls.'''
+
+[[dependencies.spell_power_simulator]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+side="CLIENT"
+
+[[dependencies.spell_power_simulator]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.250,21.2)"
+side="CLIENT"
+
+[[dependencies.spell_power_simulator]]
+modId="irons_spellbooks"
+type="required"
+versionRange="[1.21.1-3.16.3]"
+side="CLIENT"
+
+[[dependencies.spell_power_simulator]]
+modId="jei"
+type="required"
+versionRange="[19.21.0.247,19.22)"
+side="CLIENT"
