@@ -4,7 +4,7 @@ license="MIT"
 
 [[mods]]
 modId="spell_power_simulator"
-version="0.1.0"
+version="0.1.1"
 displayName="Spell Power Simulator"
 authors="Ego-jpg"
 description='''Client-side, audited spell power comparisons from JEI scrolls.'''
@@ -30,5 +30,5 @@ side="CLIENT"
 [[dependencies.spell_power_simulator]]
 modId="jei"
 type="required"
-versionRange="[19.21.0.247,19.22)"
+versionRange="[19.32.0.359,19.33)"
 side="CLIENT"

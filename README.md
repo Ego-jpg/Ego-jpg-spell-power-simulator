@@ -10,7 +10,7 @@ Mod auxiliar **client-side** para consultar pergaminhos no JEI e comparar dano c
 | Java JDK | 21 |
 | NeoForge | 21.1.250 |
 | Iron's Spells 'n Spellbooks | 1.21.1-3.16.3 |
-| JEI | 19.21.0.247 |
+| JEI | 19.32.0.359 (SoMake) |
 | GeckoLib | 4.7.5.1 |
 | Curios | 9.5.1+1.21.1 |
 | Player Animator | 2.0.1+1.21.1 |
@@ -51,7 +51,7 @@ Os testes JUnit rodam com o suporte de testes do ModDevGradle/NeoForge. Os teste
 
 Em ambiente cloud Linux, `bash tools/cloud-setup.sh` prepara o JDK e gera `/workspace/cloud-java-env.sh` com inicialização de Java, proxy e confiança TLS da plataforma. Depois use `source /workspace/cloud-java-env.sh` antes dos comandos Gradle. Não coloque credenciais em arquivos do projeto.
 
-O checkout cloud já é isolado; não é necessário criar outro worktree. O GitHub Actions executa testes e build com Java 21 e disponibiliza o JAR e relatórios como artefatos da execução. O JAR fica em `build/libs/spell-power-simulator-0.1.0.jar`.
+O checkout cloud já é isolado; não é necessário criar outro worktree. O GitHub Actions executa testes e build com Java 21 e disponibiliza o JAR e relatórios como artefatos da execução. O JAR fica em `build/libs/spell-power-simulator-0.1.1.jar`.
 
 ## Organização
 
