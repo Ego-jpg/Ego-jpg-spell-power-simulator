@@ -1,0 +1,1 @@
+# Ego-jpg-spell-power-simulator
