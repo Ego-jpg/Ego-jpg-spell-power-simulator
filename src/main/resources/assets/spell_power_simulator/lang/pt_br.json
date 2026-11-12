@@ -1,0 +1,17 @@
+{
+  "key.categories.spell_power_simulator": "Spell Power Simulator",
+  "key.spell_power_simulator.open": "Simular pergaminho no JEI",
+  "screen.spell_power_simulator.title": "Spell Power Simulator",
+  "screen.spell_power_simulator.spell": "%s — Nível %s",
+  "screen.spell_power_simulator.current_powers": "Atual: geral %s × / escola %s ×",
+  "screen.spell_power_simulator.general": "Geral (1 = 100%)",
+  "screen.spell_power_simulator.school": "Escola (1 = 100%)",
+  "screen.spell_power_simulator.reset": "Usar poderes atuais",
+  "screen.spell_power_simulator.unsupported": "Não suportada: magia, nível ou classe ainda não auditados.",
+  "screen.spell_power_simulator.unavailable": "Indisponível: jogador/configuração ausente ou escalamento diferente da fórmula auditada.",
+  "screen.spell_power_simulator.invalid": "Insira poderes finitos, não negativos e dentro do intervalo calculável.",
+  "screen.spell_power_simulator.damage": "Dano: atual %s → simulado %s",
+  "screen.spell_power_simulator.delta": "Diferença: %s (%s)",
+  "screen.spell_power_simulator.config": "Multiplicador sincronizado: %s ×",
+  "screen.spell_power_simulator.scope": "Firebolt: impacto direto, no nível do pergaminho. Antes das defesas do alvo e eventos do servidor; exclui queimadura. Nenhum atributo ou item é alterado."
+}

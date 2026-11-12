@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "openai.chatgpt",
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-gradle"
+  ]
+}

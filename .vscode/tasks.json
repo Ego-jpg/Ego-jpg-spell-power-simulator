@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Gradle: build e testes",
+      "type": "process",
+      "command": "${workspaceFolder}/gradlew",
+      "windows": { "command": "${workspaceFolder}\\gradlew.bat" },
+      "args": ["--console=plain", "test", "build"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$javac"]
+    },
+    {
+      "label": "Gradle: testes",
+      "type": "process",
+      "command": "${workspaceFolder}/gradlew",
+      "windows": { "command": "${workspaceFolder}\\gradlew.bat" },
+      "args": ["--console=plain", "test"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": ["$javac"]
+    },
+    {
+      "label": "Gradle: cliente Minecraft",
+      "type": "process",
+      "command": "${workspaceFolder}/gradlew",
+      "windows": { "command": "${workspaceFolder}\\gradlew.bat" },
+      "args": ["--console=plain", "runClient"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": ["$javac"]
+    },
+    {
+      "label": "Gradle: validar com resumo (Windows)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\tools\\validate.ps1"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}
