@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - spell-power-simulator",
+        "order": 0
+      },
+      "projectName": "spell-power-simulator",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@${workspaceFolder}/build/moddev/clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@${workspaceFolder}/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspell_power_simulator%%${workspaceFolder}/bin/main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}
